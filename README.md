@@ -4,7 +4,7 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
+- Nome:Gustavo Leonardi
 - Matricula:886570
 - Proposta de projeto escolhida:Site de notícias
 - Breve descrição sobre seu projeto:Site de notícias com informações em geral
