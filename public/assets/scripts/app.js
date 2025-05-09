@@ -76,3 +76,33 @@ if (window.location.pathname.includes('termos.html')) {
         }
       });
   }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const carrosselInner = document.querySelector('#carouselExampleFade .carousel-inner');
+
+    async function buscarCarrossel() {
+        try {
+            const response = await fetch('http://localhost:3000/imagens_carrossel');
+            const imagens = await response.json();
+            carrosselInner.innerHTML = '';
+
+            imagens.forEach((imagem, index) => {
+                const item = document.createElement('div');
+                item.classList.add('carousel-item');
+                if (index === 0) {
+                    item.classList.add('active'); 
+                }
+                item.innerHTML = `
+                    <img src="${imagem.url}" class="d-block w-100 mx-auto" alt="${imagem.alt}" style="max-height: 400px; max-width: 400px; object-fit: contain;">
+                `;
+                carrosselInner.appendChild(item);
+            });
+
+        } catch (error) {
+            console.error('Erro ao buscar imagens do carrossel:', error);
+            carrosselInner.innerHTML = '<p>Erro ao carregar o carrossel.</p>';
+        }
+    }
+
+    buscarCarrossel();
+});

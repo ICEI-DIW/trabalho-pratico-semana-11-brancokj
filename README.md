@@ -5,17 +5,17 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 ## Informações do trabalho
 
 - Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Matricula:886570
+- Proposta de projeto escolhida:Site de notícias
+- Breve descrição sobre seu projeto:Site de notícias com informações em geral
 
 **Print do teste da API com visualização do JSON**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](image-1.png)
 
 ## **Orientações Gerais**
 
