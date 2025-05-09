@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+</head>
+<body>
+
+    <Header>
+
+        <div class="logo">
+           <a href="index.html"> <img src="./imgs/original-removebg-preview.png" alt="" width="150"
+                height="150" ></a>
+        </div>
+
+        <div class="nomesite">
+            <h1>Portal de Notícias GRAL</h1>
+        </div>
+
+        <div class="divbusca">
+            <input type="text" name="Pesquisa" id="txtBusca" placeholder="Pesquisar" width="20" height="20">
+            <img src="./img/2606133_5613.svg" id="btnBusca" alt="Buscar" width="15" height="15">
+        </div>
+    </Header>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <main id="itens">
+        <div id="cards-container"></div>
+        <div id="conteudo">
+            <h1 id="titulo"></h1>
+            <p id="descricao"></p>
+            <img id="imagem" alt="">
+        </div>
+        <script src="./assets/scripts/app.js"></script>
+    </main>
+</body>
+</html>
